@@ -1,4 +1,4 @@
-# **What-I-learned-in-week-2**<br>
+# **🤫  What-I-learned-in-week-2**<br>
 <!-- return, indices, Comparison Operators && if... else (statements), fizzBuzz, codewars-->
 > ## **Starting off with reviewing...**<br>
 > What are ***JavaScript Functions***?<br>
@@ -7,7 +7,7 @@
 
 ---
 
-## **what does *return* do ?**<br>
+## **🤔 what does *return* do ?**<br>
 The ***return*** statement ends function execution and specifies a value to be returned to the function caller.<br>
 
 For example:
@@ -23,7 +23,7 @@ As you can see the *parameter* `num` is assigned the value of number `6` and it 
 
 > We were also introduce to some new tool of communication such as *Slack*.<br>
 
-## **What is *Slack* ?**<br>
+## **🤔 What is *Slack* ?**<br>
 Slack is a new communication platform to be able to interact with teams, workplaces or friends. It's faster, better organized and more secure than e-mail. It was developed by American software company Slack Technologies. It includes different types of chat rooms that could be created by anyone in the group. It could be organized by topic, private groups and direct messaging.<br>
 This is the main platform we will use to communicate in this course.<br>
  
@@ -31,11 +31,11 @@ This is the main platform we will use to communicate in this course.<br>
 
 > This is one of the many important things in javascript. Even though at the moment we are just scratching the surface. This being a very important topic that we need to understand the basis fully in order to advance in this field.<br>
 
-## **index / indices / ~~indexes~~**<br>
+## **🤓 index / indices / ~~indexes~~**<br>
  A string is a sequence of one or more characters that may consist of letters, numbers, or symbols.
  Each character in a JavaScript string can be accessed by an index number, and all strings have methods and properties available to them.<br>
  
- ### ***The difference between *String Primitives* and *String Object* :***<br>
+ ### 😯 ***The difference between *String Primitives* and *String Object* :***<br>
 Long story short, ***string primitives*** are to my understanding, always parsed, analyzed, solved, looked into the actual string. Where as ***String Objects*** are evaluated as a single string as an object in an **array**.<br>
 
 For example:<br>
@@ -52,7 +52,7 @@ console.log(example3);       // [String: "this is an object"]
 
 *Now... based on this 👆 we are going to continue with **Indices***
 
-In order to find the type of values we have assigned to those variables we use the `typeof` operator, just like this:
+☝️😌 In order to find the type of values we have assigned to those variables we use the `typeof` operator, just like this:
 
 ```javascript
 typeof example1;        // string
