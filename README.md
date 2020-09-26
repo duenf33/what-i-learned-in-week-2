@@ -9,12 +9,13 @@
 
 ---
 
-## **🤔 what does *return* do ?**<br>
+## **🧐 what does *return* do ?**<br>
 The ***return*** statement ends function execution and specifies a value to be returned to the function caller.<br>
 
 For example:
 ```javascript
 function example(num) { 
+
     return num + 1;
 }
 console.log(6);     // 7
@@ -44,11 +45,15 @@ For example:<br>
 
 ```javascript
 let example1 = "this is a string";
+
 let example2 = string("this is also a string");
+
 let example3 = new String("this is an object");
 
 console.log(example1);       // "this is a string"
+
 console.log(example2);       // "this is also a string"
+
 console.log(example3);       // [String: "this is an object"]
 ```
 
@@ -58,10 +63,12 @@ console.log(example3);       // [String: "this is an object"]
 
 ```javascript
 typeof example1;        // string
+
 typeof example2;        // string
+
 typeof example3;        // object
 ```
-
+<a id="index"></a>
 |  t  |  h  |  i  |  s  |     |  i  |  s  |     |  a  |     |  s  |  t  |  r  |  i  |  n  |  g  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  10 |  11 |  12 |  13 |  14 |  15 |   
@@ -71,37 +78,56 @@ We are going to access this 👆 string now and we will be using these following
 ```javascript 
 "this is a string"[14]        // n
 ```
-##### 2. With `charArt(8)` is also possible to return the character just by using the ***index number as parameter*** :<br>
+##### 2. With `charArt(8)` is also possible to return the character just by using the ***index number as parameter*** ⇲<br>
 ```javascript 
 let example1 = "this is a string";
+
 example1.charAt(8);          // a
 ```
-##### 3. We can use `indexOf("r")` to return the index number by the ***first instance of a character*** :<br>
+##### 3. We can use `indexOf("r")` to return the index number by the ***first instance of a character*** ⇲<br>
 ```javascript 
 let example1 = "this is a string";
+
 example1.indexOf("i");       // 2
 ```
-##### 4. `lastIndezOf("s")` is the opposite of `indexOf`. It will get the ***last instance of a character***
+##### 4. `lastIndexOf("s")` is the opposite of `indexOf`. It will get the ***last instance of a character*** ⇲<br>
 ```javascript 
 let example1 = "this is a string";
+
 example1.lastIndexOf("s");   // 10
 ```
-##### 5. In this `indexOf("is")` method. we can search for multiple characters the string
+##### 5. In this `indexOf("is")` method. we can search for multiple characters in the string, where it will return the index number of the first character in the instance ⇲<br>
 ```javascript 
 let example1 = "this is a string";
-example1.indexOf("is");         // 5
+
+example1.indexOf("is");       // 5
 ```
-##### 6. 
+##### 6. The `slice("0, 4")` method returns the characters between these two parameters. The first parameter will include the first character in the return and the second parameter character will not be included, only up to the prior character. In this case ***second parameter number 4*** will be the space between ***this*** and ***is*** ⇲<br>
 ```javascript 
 let example1 = "this is a string";
+
 example1.slice(0, 4);        // this
 ```
-##### 7. 
+##### 7. If the ***second parameter*** is not included then the `slice("10")` method will return everything from that parameter to the end of the string ⇲<br>
 ```javascript 
 let example1 = "this is a string";
+
 example1.slice(10);          // string
 ```
-##### 8. 
+
+One more very useful thing is finding the ***length of a string*** and this is how you do it :<br>
+
+```javascript
+let thisString = "This is and example";
+
+thisString.length           // 19
+```
+As you may have noticed, the `length` being `19` is not the same as calling out the `lastIndexOf` of the string. [Remember we have to start counting from `0` to find the index number of a character.](#index) `lastIndexOf` would be `18`
+
+---
+
+## **🥴 _JavaScript_ Comparison Operators && if... else (statements) :**<br>
+
 
 
 
