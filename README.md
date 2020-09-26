@@ -81,8 +81,8 @@ Using only the `square brackets` we can ***access any character in the string***
 ```javascript 
 "this is a string"[14]        // n
 ```
-### **2. charArt()**<br>
-With `charArt(8)` is also possible to return the character just by using the ***index number as parameter*** ⇲<br>
+### **2. charAt()**<br>
+With `charAt(8)` is also possible to return the character just by using the ***index number as parameter*** ⇲<br>
 ```javascript 
 let example1 = "this is a string";
 
@@ -102,21 +102,21 @@ let example1 = "this is a string";
 
 example1.lastIndexOf("s");   // 10
 ```
-### **5. indexOf()**<br>
+### **5. indexOf()**, *again*<br>
 In this `indexOf("is")` method. we can search for multiple characters in the string, where it will return the index number of the first character in the instance ⇲<br>
 ```javascript 
 let example1 = "this is a string";
 
 example1.indexOf("is");       // 5
 ```
-### **6. slice()**<br>
+### **6. slice( , )**<br>
 The `slice("0, 4")` method returns the characters between these two parameters. The first parameter will include the first character in the return and the second parameter character will not be included, only up to the prior character. In this case ***second parameter number 4*** will be the space between ***this*** and ***is*** ⇲<br>
 ```javascript 
 let example1 = "this is a string";
 
 example1.slice(0, 4);        // this
 ```
-### **7. slice( , )**<br>
+### **7. slice()**<br>
 If the ***second parameter*** is not included then the `slice("10")` method will return everything from that parameter to the end of the string ⇲<br>
 ```javascript 
 let example1 = "this is a string";
@@ -132,7 +132,7 @@ let thisString = "This is an example";
 thisString.length           // 18
 ```
 As you may have noticed, the `length` being `18` is not the same as calling out the `lastIndexOf` of the string. [Remember we have to start counting from `0` to find the index number of a character.](#index) `lastIndexOf` would be `17`.<br>
-### **9. toUpperCase() and toLowerCase()**
+### **9. toUpperCase()** *and* **toLowerCase()**
 😬 Another way of being able to manipulate information input is by changing the letter casing either from lower case to upper case or vice versa because `JavaScript` is case sensitive.<br>
 ```javascript
 let upperCaseInput = "FERNANDO";
@@ -144,7 +144,7 @@ let lowerCaseInput = "Duenas";
 lowerCaseInput.toUpperCase();       // DUENAS
 ```
 ### **Have you notice how the `lowerCaseInput "Duenas"` also have the first character upper cased?**<br>
-#### Well that's the whole point, to be able to transform that input to computer readable without confusion since upper case letters characters are a different `ASCII` code from lower case letters to upper case letters and special characters.
+Well that's the whole point, to be able to transform that input to computer readable without confusion since upper case letters characters are a different `ASCII` code from lower case letters to upper case letters and special characters.
 
 ```markdown
 * Using ASCII Decimal values:
@@ -154,8 +154,8 @@ ASCII value of uppercase A to Z alphabet –> 65 to 90.
 ASCII value of lowercase a to z alphabet –> 97 to 122.
 ```
 
-#### If you pay attention to the beginning numbers `97` and `65`. If you subtract them `97 - 65`, you will find the result is `32`.<br>
-#### The number `97` is the lower case letter `a` and the upper case `A` would be the number `65` and so on. The distance between `upper case characters` and `lower case characters` in standard ASCII is `32`. 
+If you pay attention to the beginning numbers `97` and `65`. If you subtract them `97 - 65`, you will find the result is `32`.<br>
+The number `97` is the lower case letter `a` and the upper case `A` would be the number `65` and so on. The distance between `upper case characters` and `lower case characters` in standard ASCII is `32`. 
 
 ###### [click here to find out more information about this topic](https://en.wikipedia.org/wiki/ASCII#ASCII_printable_characters)
 
