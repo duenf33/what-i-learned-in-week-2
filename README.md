@@ -57,8 +57,10 @@ console.log(example2);       // "this is also a string"
 console.log(example3);       // [String: "this is an object"]
 ```
 
+---
+
 *Now... based on this 👆 we are going to continue with **Indices***
-#### ☝️😌 `typeof()`
+### ☝️😌 `typeof()`
  In order to find the type of values we have assigned to those variables we use the `typeof` operator, just like this:
 
 ```javascript
@@ -74,67 +76,64 @@ typeof example3;        // object
 |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  10 |  11 |  12 |  13 |  14 |  15 |   
 
 We are going to access this 👆 string now and we will be using these following ***operators***:<br>
-### `1. Square Brackets`<br> 
-#### Using only the `square brackets` we can ***access any character in the string*** ⇲<br>
+### **1. Square Brackets**<br> 
+Using only the `square brackets` we can ***access any character in the string*** ⇲<br>
 ```javascript 
 "this is a string"[14]        // n
 ```
-### `2. charArt()`<br>
-#### `With `charArt(8)` is also possible to return the character just by using the ***index number as parameter*** ⇲<br>
+### **2. charArt()**<br>
+With `charArt(8)` is also possible to return the character just by using the ***index number as parameter*** ⇲<br>
 ```javascript 
 let example1 = "this is a string";
 
 example1.charAt(8);          // a
 ```
-### `3. indexOf()`<br> 
-#### We can use `indexOf("r")` to return the index number by the ***first instance of a character*** ⇲<br>
+### **3. indexOf()**<br> 
+We can use `indexOf("r")` to return the index number by the ***first instance of a character*** ⇲<br>
 ```javascript 
 let example1 = "this is a string";
 
 example1.indexOf("i");       // 2
 ```
-### `4. lastIndexOf()`<br>
-#### `lastIndexOf("s")` is the opposite of `indexOf`. It will get the ***last instance of a character*** ⇲<br>
+### **4. lastIndexOf()**<br>
+`lastIndexOf("s")` is the opposite of `indexOf`. It will get the ***last instance of a character*** ⇲<br>
 ```javascript 
 let example1 = "this is a string";
 
 example1.lastIndexOf("s");   // 10
 ```
-### `5. indexOf()`<br>
-#### In this `indexOf("is")` method. we can search for multiple characters in the string, where it will return the index number of the first character in the instance ⇲<br>
+### **5. indexOf()**<br>
+In this `indexOf("is")` method. we can search for multiple characters in the string, where it will return the index number of the first character in the instance ⇲<br>
 ```javascript 
 let example1 = "this is a string";
 
 example1.indexOf("is");       // 5
 ```
-### `6. slice()`<br>
-#### The `slice("0, 4")` method returns the characters between these two parameters. The first parameter will include the first character in the return and the second parameter character will not be included, only up to the prior character. In this case ***second parameter number 4*** will be the space between ***this*** and ***is*** ⇲<br>
+### **6. slice()**<br>
+The `slice("0, 4")` method returns the characters between these two parameters. The first parameter will include the first character in the return and the second parameter character will not be included, only up to the prior character. In this case ***second parameter number 4*** will be the space between ***this*** and ***is*** ⇲<br>
 ```javascript 
 let example1 = "this is a string";
 
 example1.slice(0, 4);        // this
 ```
-### `7. slice( , )`<br>
-#### If the ***second parameter*** is not included then the `slice("10")` method will return everything from that parameter to the end of the string ⇲<br>
+### **7. slice( , )**<br>
+If the ***second parameter*** is not included then the `slice("10")` method will return everything from that parameter to the end of the string ⇲<br>
 ```javascript 
 let example1 = "this is a string";
 
 example1.slice(10);          // string
 ```
-### `8. toUpperCase() and toLowerCase()`
-
-#### 😏 One more very useful thing is finding the ***length of a string*** and this is how you do it :<br>
+### **8. Length Property**<br>
+😏 One more very useful thing is finding the ***length of a string*** and this is how you do it :<br>
 
 ```javascript
 let thisString = "This is an example";
 
 thisString.length           // 18
 ```
-#### As you may have noticed, the `length` being `18` is not the same as calling out the `lastIndexOf` of the string. [Remember we have to start counting from `0` to find the index number of a character.](#index) `lastIndexOf` would be `17`.<br>
-
----
-
-#### 😬 Another way of being able to manipulate information input is by changing the letter casing either from lower case to upper case or vice versa because `JavaScript` is case sensitive.<br>
+As you may have noticed, the `length` being `18` is not the same as calling out the `lastIndexOf` of the string. [Remember we have to start counting from `0` to find the index number of a character.](#index) `lastIndexOf` would be `17`.<br>
+### **9. toUpperCase() and toLowerCase()**
+😬 Another way of being able to manipulate information input is by changing the letter casing either from lower case to upper case or vice versa because `JavaScript` is case sensitive.<br>
 ```javascript
 let upperCaseInput = "FERNANDO";
 
