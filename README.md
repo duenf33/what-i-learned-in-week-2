@@ -115,14 +115,44 @@ let example1 = "this is a string";
 example1.slice(10);          // string
 ```
 
-One more very useful thing is finding the ***length of a string*** and this is how you do it :<br>
+---
+
+😏 One more very useful thing is finding the ***length of a string*** and this is how you do it :<br>
 
 ```javascript
-let thisString = "This is and example";
+let thisString = "This is an example";
 
-thisString.length           // 19
+thisString.length           // 18
 ```
-As you may have noticed, the `length` being `19` is not the same as calling out the `lastIndexOf` of the string. [Remember we have to start counting from `0` to find the index number of a character.](#index) `lastIndexOf` would be `18`
+As you may have noticed, the `length` being `18` is not the same as calling out the `lastIndexOf` of the string. [Remember we have to start counting from `0` to find the index number of a character.](#index) `lastIndexOf` would be `17`.<br>
+
+---
+
+😬 Another way of being able to manipulate information input is by changing the letter casing either from lower case to upper case or vice versa because `JavaScript` is case sensitive.<br>
+```javascript
+let upperCaseInput = "FERNANDO";
+
+upperCaseInput.toLowerCase();       // fernando
+
+let lowerCaseInput = "Duenas";
+
+lowerCaseInput.toUpperCase();       // DUENAS
+```
+**Have you notice how the `lowerCaseInput "Duenas"` also have the first character upper cased?**<br>
+Well that's the whole point, to be able to transform that input to computer readable without confusion since upper case letters characters are a different `ASCII` code from lower case letters to upper case letters and special characters.
+
+```markdown
+* Using ASCII Decimal values:
+
+ASCII value of uppercase A to Z alphabet –> 65 to 90.
+
+ASCII value of lowercase a to z alphabet –> 97 to 122.
+```
+
+If you pay attention to the beginning numbers `97` and `65`. If you subtract them `97 - 65`, you will find the result is `32`.<br>
+The number `97` is the lower case letter `a` and the upper case `A` would be the number `65` and so on. The distance between `upper case characters` and `lower case characters` in standard ASCII is `32`. 
+
+###### [click here to find out more information about this topic](https://en.wikipedia.org/wiki/ASCII#ASCII_printable_characters)
 
 ---
 
