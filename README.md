@@ -1,7 +1,9 @@
 # **🤫  What-I-learned-in-week-2**<br>
+###### ***Fernando Duenas***
+###### ***October 28th, 2020***
 <!-- return, indices, Comparison Operators && if... else (statements), fizzBuzz, codewars-->
 > ## **Starting off with reviewing...**<br>
-> What are ***JavaScript Functions***?<br>
+> What is a ***JavaScript Function***?<br>
 > A ***JavaScript function*** is a block of code designed to perform a particular task.
 > Its executed when ***"something"*** invokes it.<br>
 
@@ -36,7 +38,7 @@ This is the main platform we will use to communicate in this course.<br>
  Each character in a JavaScript string can be accessed by an index number, and all strings have methods and properties available to them.<br>
  
  ### 😯 ***The difference between *String Primitives* and *String Object* :***<br>
-Long story short, ***string primitives*** are to my understanding, always parsed, analyzed, solved, looked into the actual string. Where as ***String Objects*** are evaluated as a single string as an object in an **array**.<br>
+Long story short, ***string primitives*** are to my understanding, always parsed, analyzed, solved, looked into the actual string. Where as ***String Objects*** are evaluated as a single string, an object in an **array**.<br>
 
 For example:<br>
 
@@ -65,46 +67,41 @@ typeof example3;        // object
 |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  10 |  11 |  12 |  13 |  14 |  15 |   
 
 We are going to access this 👆 string now and we will be using these following ***operators***:<br>
-1. #####  Using only the **square** **brackets** we can access any character in the string
+##### 1. Using only the `square brackets` we can ***access any character in the string*** ⇲<br>
 ```javascript 
 "this is a string"[14]        // n
 ```
-2. ##### 
+##### 2. With `charArt(8)` is also possible to return the character just by using the ***index number as parameter*** :<br>
 ```javascript 
 let example1 = "this is a string";
 example1.charAt(8);          // a
 ```
-👆
-
+##### 3. We can use `indexOf("r")` to return the index number by the ***first instance of a character*** :<br>
 ```javascript 
 let example1 = "this is a string";
-example1.indexOf("r");       // 12
+example1.indexOf("i");       // 2
 ```
-👆
-
+##### 4. `lastIndezOf("s")` is the opposite of `indexOf`. It will get the ***last instance of a character***
 ```javascript 
 let example1 = "this is a string";
 example1.lastIndexOf("s");   // 10
 ```
-👆
-
+##### 5. In this `indexOf("is")` method. we can search for multiple characters the string
 ```javascript 
 let example1 = "this is a string";
-example1.indexOf(5);         // is
+example1.indexOf("is");         // 5
 ```
-👆
-
+##### 6. 
 ```javascript 
 let example1 = "this is a string";
 example1.slice(0, 4);        // this
 ```
-👆
-
+##### 7. 
 ```javascript 
 let example1 = "this is a string";
 example1.slice(10);          // string
 ```
-👆
+##### 8. 
 
 
 
