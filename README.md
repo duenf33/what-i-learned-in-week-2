@@ -234,7 +234,15 @@ let num7 = 1;
 num7 >>= 1;                // 0
 num7.toString(2);         // '0000000'
 ```
-As you can see this `Right Shift Assignment` operator shifts 
+As you can see this `Right Shift Assignment` and `Unsigned right shift assignment` operators moves the specified amount of bits to the right and assigns the result to the variable.<br>
+
+Of course there is a lot more than just that. Things always have to get more complicated than what they look like...
+<br>
+
+This operator shifts the first operand the specified number of bits to the right. Excess bits shifted off to the right are discarded. Zero bits are shifted in from the left. **The `sign bit` becomes `0`**, so the result is always non-negative.<br>
+
+Yes, now we are talking about `sign bits`... that will be for another topic a different week.
+
 
 ---
 
