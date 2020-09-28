@@ -234,6 +234,10 @@ let num7 = 1;
 num7 >>= 1;                // 0
 num7.toString(2);         // '0000000'
 ```
+---
+
+* ### **`Right/Left Shift Assignment (>>)(<<)` and `Unsigned right/Left shift assignment (>>>)(<<<)`**<br>
+
 As you can see this `Right Shift Assignment` and `Unsigned right shift assignment` operators moves the specified amount of bits to the right and assigns the result to the variable.<br>
 
 Of course there is a lot more than just that. Things always have to get more complicated than what they look like...
@@ -243,7 +247,35 @@ This operator shifts the first operand the specified number of bits to the right
 
 Yes, now we are talking about `sign bits`... that will be for another topic a different week.
 
+---
 
+* ### **`Logical nullish assignment`**
+The nullish coalescing operator (??) is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.<br>
+
+Contrary to the logical OR (||) operator, the left operand is returned if it is a falsy value which is not null or undefined. In other words, if you use || to provide some default value to another variable foo, you may encounter unexpected behaviors if you consider some falsy values as usable (eg. '' or 0). See below for more examples.<br>
+
+```javascript
+const foo = null ?? 'default string';
+console.log(foo);     // output: "default string"
+
+const baz = 0 ?? 42;
+console.log(baz);     // output: 0
+```
+In the example below, we will provide default values but keep values other than null or undefined.
+```javascript
+const nullValue = null;
+const emptyText = ""; // falsy
+const someNumber = 42;
+
+const valA = nullValue ?? "default for A";
+const valB = emptyText ?? "default for B";
+const valC = someNumber ?? 0;
+
+console.log(valA); // "default for A"
+console.log(valB); // "" (as the empty string is not null or undefined)
+console.log(valC); // 42
+```
+###### [**Click here** for more information about `Logical nullish assignment`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator)
 ---
 
 ## **If... Else statement**<br>
