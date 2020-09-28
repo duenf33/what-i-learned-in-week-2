@@ -124,7 +124,7 @@ let example1 = "this is a string";
 example1.slice(10);          // string
 ```
 ### **8. Length Property**<br>
-😏 One more very useful thing is finding the ***length of a string*** and this is how you do it :<br>
+😏 One more very useful thing is finding the ***length of a string*** and this is how you do it ⇲<br>
 
 ```javascript
 let thisString = "This is an example";
@@ -133,7 +133,7 @@ thisString.length           // 18
 ```
 As you may have noticed, the `length` being `18` is not the same as calling out the `lastIndexOf` of the string. [Remember we have to start counting from `0` to find the index number of a character.](#index) `lastIndexOf` would be `17`.<br>
 ### **9. toUpperCase()** *and* **toLowerCase()**
-😬 Another way of being able to manipulate information input is by changing the letter casing either from lower case to upper case or vice versa because `JavaScript` is case sensitive.<br>
+😬 Another way of being able to manipulate information input is by changing the letter casing either from lower case to upper case or vice versa because `JavaScript` is case sensitive ⇲<br>
 ```javascript
 let upperCaseInput = "FERNANDO";
 
@@ -157,14 +157,133 @@ ASCII value of lowercase a to z alphabet –> 97 to 122.
 If you pay attention to the beginning numbers `97` and `65`. If you subtract them `97 - 65`, you will find the result is `32`.<br>
 The number `97` is the lower case letter `a` and the upper case `A` would be the number `65` and so on. The distance between `upper case characters` and `lower case characters` in standard ASCII is `32`. 
 
-###### [click here to find out more information about this topic](https://en.wikipedia.org/wiki/ASCII#ASCII_printable_characters)
+###### [**click here** to find out more information about this topic in wikipedia.](https://en.wikipedia.org/wiki/ASCII#ASCII_printable_characters)
 
 ---
 
-## **🥴 _JavaScript_ Comparison Operators && if... else (statements) :**<br>
+## **🥴 _JavaScript_ Comparison Operators :**<br>
 
+| Name | Shorthand operator | Meaning |
+| :--- | :--- | :--- |
+| Assignment |	`x = y` |	`x = y` |
+| Addition assignment | 	`x += y` |	`x = x + y` |
+| Subtraction assignment |	`x -= y` |	`x = x - y` |
+| Multiplication assignment |	`x *= y` |	`x = x * y` |
+| Division assignment |	`x /= y` |	`x = x / y` |
+| Remainder assignment |	`x %= y` |	`x = x % y` |
+| Exponentiation assignment |	`x **= y` |	`x = x ** y` |
+| Left shift assignment |	`x <<= y` |	`x = x << y` |
+| Right shift assignment |	`x >>= y` |	`x = x >> y` |
+| Unsigned right shift assignment |	`x >>>= y` |	`x = x >>> y` |
+| Bitwise AND assignment |	`x &= y `|	`x = x & y` |
+| Bitwise XOR assignment |	`x ^= y `|	`x = x ^ y` |
+| Bitwise OR assignment |	`x |= y `|	`x = x | y` |
+| Logical AND assignment |	`x &&= y` | `x && (x = y)` |
+| Logical OR assignment |	`x ||= y` |	`x || (x = y)` |
+| Logical nullish assignment |	`x ??= y` |	`x ?? (x = y)` |
+---
+The names in this ***table*** are self explanatory, however I am going to explain a couple of them we have not seen yet in class and to be honest it is really interesting to just think of how many different this we can accomplish with the use of these ***operators*** in our code.<br>
 
+We first are going to talk about the shift assignment operators, specially in the example below we will use the `Right Shift Assignment` operator ⇲<br>
 
+```javascript
+let num = 90;
+num;                      // 90        <- number
+result = num.toString(2); // '1011010' <- String
+parseInt(result);         // 1011010   <- number
+```
+* **Right shift assignment ⇲**<br>
+```javascript
+let num1 = 90;
+num1 >>= 1;               // 45
+num1.toString(2);         // '0101101'
+```
+* **Unsigned right shift assignment ⇲**<br>
+```javascript
+let num2 = 45 >>> 1;
+num2;                     // 22
+num2.toString(2);         // '0010110'
+```
+* **Right shift assignment ⇲**<br>
+```javascript
+let num3 = 22;       
+num3 >>= 1;               // 11
+num3.toString(2);         // '0001011'
+```
+* **Right shift assignment ⇲**<br>
+```javascript
+let num4 = 11 >> 1;
+num4;                     // 5
+num4.toString(2);         // '0000101'
+```
+* **Right shift assignment ⇲**<br>
+```javascript
+let num5 = 5;
+num5 >>= 1;               // 2
+num5.toString(2);         // '0000010'
+```
+* **Unsigned right shift assignment ⇲**<br>
+```javascript
+let num6 = 2 >>> 1;
+num6;                     // 1
+num6.toString(2);         // '0000001'
+```
+* **Right shift assignment ⇲**<br>
+```javascript
+let num7 = 1;
+num7 >>= 1;                // 0
+num7.toString(2);         // '0000000'
+```
+As you can see this `Right Shift Assignment` operator shifts 
 
+---
 
+## **If... Else statement**<br>
+The `if statement` executes a statement `if` a specified condition is [truthy](https://developer.mozilla.org/en-US/docs/Glossary/truthy). `If` the condition is [falsy](https://developer.mozilla.org/en-US/docs/Glossary/falsy), another statement can be executed.<br>
 
+For example ⇲<br>
+```javascript
+function howLongIsMyString(str) {
+  let x = str.length;
+  if (x > 20) {
+    return "That's a long string!";
+  } else if (x >= 10) {
+    return "That's a regular sized string!";
+  } else {
+    return "That's a small string!";
+  }
+}
+```
+
+Multiple if...else statements can be nested to create an else if clause. Note that there is no elseif (in one word) keyword in JavaScript.
+
+```javascript
+if (condition1)
+  statement1
+else if (condition2)
+  statement2
+else if (condition3)
+  statement3
+...
+else
+  statementN
+```
+###### [**Click here** to learn more about If... else... else if... statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+
+---
+
+## **FizzBuzz**
+FizzBuzz is a classic programming task, usually used in software development interviews to determine if a candidate can code.<br>
+
+Write a function that for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.<br>
+
+```javascript
+function fizzy(num) {
+    if (i % 15 == 0) console.log("FizzBuzz");
+    else if (i % 3 == 0) console.log("Fizz");
+    else if (i % 5 == 0) console.log("Buzz");
+    else console.log(i);
+}
+```
+
+###### [**Click here to learn more about ⇢**Breaking down the shortest **FizzBuzz** answer and understanding how it works](https://codeburst.io/javascript-breaking-down-the-shortest-possible-fizzbuzz-answer-94a0ad9d128a)
